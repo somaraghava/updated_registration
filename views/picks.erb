@@ -1,0 +1,76 @@
+<!--suppress ALL -->
+<html>
+
+<head>
+
+  <title>PICKUP DETAILS</title>
+
+  <script type="text/javascript">
+
+    <!--
+
+    function validate_form( )
+    {
+      if (document.myform.date.value == "")
+      {
+        alert ( "Please fill in the 'date' box." );
+        return false;
+      }
+      if (document.myform.time.value == "")
+      {
+        alert ( "Enter Last name" );
+        return false;
+      }
+      if (document.myform.weight.value == "")
+      {
+        alert ("please fill in weight box")
+      }
+      alert("sucessfully Submitted");
+      return true;
+
+    }
+
+    //-->
+
+  </script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<form  name="myform" action="submit"  onsubmit="return validate_form()" method="post">
+  <table align="center"  width="100%" cellspacing="2" cellpadding="2" border="5">
+    <tr>
+      <td colspan="2" align="center"><b>REGISTRATION FORM</b></td>
+
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="41%">Date<span style="color:#ff0000">*</span></td>
+
+      <td width="57%"><input type="date" value="" name="date" size="24" min="2017-03-01" required>
+        <span id="mydate_error" style="display:none;"></span></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="41%">Time<span style="color:#ff0000">*</span></td>
+      <td width="57%">
+        <input type="time" value="" name="time"  size="24" required></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" width="41%">weight<span style="color:#ff0000">*</span></td>
+      <td width="57%">
+        <input type="number" value="" name="weight" size="24" required></td>
+    </tr>
+
+    <td colspan="2">
+      <p align="center">
+        <input type="submit" value="submit" name="B4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </p></td>
+    </tr>
+
+  </table>
+</form>
+</body>
+
+</html>
+
+
+

@@ -6,7 +6,7 @@ require  './models/models'
 
 
 get '/' do
-  erb :index
+  erb :index1
 end
 
 post '/register' do
@@ -24,7 +24,7 @@ post '/register' do
 
   get '/register' do
 
-    erb :pickupdetails
+    erb :picks
 
   end
 
